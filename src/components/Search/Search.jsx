@@ -17,16 +17,19 @@ const Search = () => {
       link: "https://github.com/dudegangwar/ChatWithPDF",
     },
     {
-      title: "Write a Text Message",
-      description: "To a friend about a trip to the beach",
+      title: "Tasker App",
+      description: "Tasker is a task management app to help you stay organised and manage your day-to-day tasks.",
+      link: "https://github.com/dudegangwar/tasker"
     },
     {
-      title: "Suggest Some Nice Places",
-      description: "To visit in New York City",
+      title: "E-commerce Shopper’s Behaviour Understanding",
+      description: "Developed a predictive model to determine whether a user would make a purchase within the year or not.",
+      link: "https://www.kaggle.com/competitions/e-commerce-shoppers-behaviour-understanding/overview"
     },
     {
-      title: "How to Plan a Trip",
-      description: "To the Grand Canyon",
+      title: "Other Projects",
+      description: "Checkout my other projects on GitHub.",
+      link: "https://github.com/dudegangwar?tab=repositories"
     },
   ]);
   

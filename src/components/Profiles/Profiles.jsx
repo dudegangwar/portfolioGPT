@@ -11,10 +11,10 @@ const Profiles = () => {
         <p className='text-sm px-5 mb-4'>Find Me On Social Media</p>
         <div className='flex gap-4 px-5'>
 
-        <LinkedInIcon/>
-        <GitHubIcon/>
-        <FacebookIcon/>
-        <YouTubeIcon/>
+        <a href='https://www.linkedin.com/in/dudegangwar/' target='_blank'><LinkedInIcon/></a>
+        <a href="https://github.com/dudegangwar" target='_blank'><GitHubIcon/></a>
+        <a href="https://www.facebook.com/dudegangwar/" target='_blank'><FacebookIcon/></a>
+        <a href="https://www.youtube.com/c/DudeGangwar" target='_blank'><YouTubeIcon/></a>
         </div>
     </div>
   )
