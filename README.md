@@ -10,3 +10,4 @@ Currently, two official plugins are available:
 # portfolioGPT
 # portfolioGPT
 # portfolioGPT
+# portfolioGPT
