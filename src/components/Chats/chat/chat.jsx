@@ -10,7 +10,7 @@ const chat = ({question,text}) => {
         
         <p>{question?"You":"ChatGPT"}</p>
         </div>
-        <p className='text-base mt-3 px-10 font-light text-gray-300'>{text}</p>
+        <div className='text-base mt-3 px-10 font-light text-gray-300'>{text}</div>
     </div>
   )
 }
