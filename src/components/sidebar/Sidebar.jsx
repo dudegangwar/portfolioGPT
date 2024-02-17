@@ -8,7 +8,7 @@ const Sidebar = () => {
   return (
     <div className='sidebar-container'>
         <Header />
-        <Options />
+        <Options heading />
         <User />
     </div>
   )

@@ -3,16 +3,15 @@ import Chat from "./chat/chat";
 import { MainContext } from "../../context/context";
 
 const Chats = () => {
-  const ctx = useContext(MainContext);
-  console.log(ctx.selectedQuestions);
+  const {selectedQuestions} = useContext(MainContext);
   return (
     <div className="flex justify-center mt-20">
       <div className="w-[746px]">
-        {ctx.selectedQuestions &&
-        Object.keys(ctx.selectedQuestions).length > 0 ? (
+        {selectedQuestions &&
+        Object.keys(selectedQuestions).length > 0 ? (
           <>
-            <Chat question text={ctx.selectedQuestions.question} />
-            <Chat text={ctx.selectedQuestions.answer} />
+            <Chat question text={selectedQuestions.question} />
+            <Chat text={selectedQuestions.answer} />
           </>
         ) : null}
       </div>

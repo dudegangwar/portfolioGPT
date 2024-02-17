@@ -3,6 +3,7 @@ export const questions =[
     "id": "1",
     "question": "Who is Anuj Kumar?",
     "answer": "Anuj Kumar is a person who has demonstrated a keen interest in various fields. While specific details about his background are not provided, Anuj could be anyone from a student to a professional in a particular industry. He may have diverse hobbies, interests, and aspirations, contributing to his unique identity."
+    // "answer":'<div><h1>Anuj kumar is chuitya</h1></div>'
   },
   {
     "id": "2",
