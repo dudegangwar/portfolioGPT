@@ -1,4 +1,5 @@
 import React from "react";
+import AnujPhoto from '../../assets/anuj.jpg'
 const Aboutme = () => {
   return (
     <div>
@@ -14,9 +15,9 @@ const Aboutme = () => {
         />
       </div>
       <div class="gallery">
-        <img src="../src/assets/anuj.jpg" alt="Image 1" />
-        <img src="../src/assets/anuj.jpg" alt="Image 2" />
-        <img src="../src/assets/anuj.jpg" alt="Image 3" />
+        <img src={AnujPhoto} alt="Image 1" />
+        <img src={AnujPhoto} alt="Image 2" />
+        <img src={AnujPhoto} alt="Image 3" />
       </div>
       <div className="mt-4">
         <h1 className="underline underline-offset-4 text-lg">About Me</h1>
