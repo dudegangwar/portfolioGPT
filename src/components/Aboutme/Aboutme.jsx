@@ -1,6 +1,75 @@
 import React from "react";
-import AnujPhoto from '../../assets/anuj.jpg'
+import AnujPhoto from "../../assets/anuj.jpg";
+import Popover from "@mui/material/Popover";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
 const Aboutme = () => {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [selected, setSelected] = React.useState(null);
+  console.log(selected);
+
+  const handleClick = (event, item) => {
+    setAnchorEl(event.currentTarget);
+    setSelected(item);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+    setSelected(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? "simple-popover" : undefined;
+  const image = [
+    {
+      title: "HTML",
+      description:
+        "Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser.",
+      img: "https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/html-5.svg",
+    },
+    {
+      title: "CSS",
+      description:
+        "Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in HTML.",
+      img: "https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/css-3.svg",
+    },
+    {
+      title: "JavaScript",
+      description:
+        "JavaScript is a programming language that enables you to create dynamically updating content, control multimedia, animate images, and much more.",
+      img: "https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/javascript.svg",
+    },
+    {
+      title: "Bootstrap",
+      description:
+        "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.",
+      img: "https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/bootstrap.svg",
+    },
+    {
+      title: "React",
+      description:
+        "React is a JavaScript library for building user interfaces, particularly single-page applications where data can change over time.",
+      img: "https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/react.svg",
+    },
+    {
+      title: "Vue.js",
+      description:
+        "Vue.js is an open-source model-view-viewmodel JavaScript framework for building user interfaces and single-page applications.",
+      img: "https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/vue.svg",
+    },
+    {
+      title: "Python",
+      description:
+        "Python is an interpreted, high-level and general-purpose programming language known for its simplicity and versatility.",
+      img: "https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/python.svg",
+    },
+    {
+      title: "SQLite",
+      description:
+        "SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine.",
+      img: "https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/sqlite.svg",
+    },
+  ];
   return (
     <div>
       <div className="flex items-center w-full justify-between border rounded-2xl p-4">
@@ -14,10 +83,30 @@ const Aboutme = () => {
           src="https://avatars.githubusercontent.com/u/86113409?v=4"
         />
       </div>
-      <div class="gallery">
-        <img src={AnujPhoto} alt="Image 1" />
-        <img src={AnujPhoto} alt="Image 2" />
-        <img src={AnujPhoto} alt="Image 3" />
+      <div className="flex w-full mt-2 rounded overflow-hidden">
+        <div className="overflow-hidden w-1/2">
+          <img
+            className="w-full h-full object-cover hover:scale-110 transition-all duration-200 ease-in-out"
+            src={AnujPhoto}
+            alt="Image 1"
+          />
+        </div>
+        <div className="w-1/2">
+          <div className="overflow-hidden w-full">
+            <img
+              className="hover:scale-110 transition-all duration-200 ease-in-out"
+              src={AnujPhoto}
+              alt="Image 2"
+            />
+          </div>
+          <div className="overflow-hidden w-full">
+            <img
+              className="hover:scale-110 transition-all duration-200 ease-in-out"
+              src={AnujPhoto}
+              alt="Image 3"
+            />
+          </div>
+        </div>
       </div>
       <div className="mt-4">
         <h1 className="underline underline-offset-4 text-lg">About Me</h1>
@@ -71,38 +160,18 @@ const Aboutme = () => {
         </h1>
         <p>I have become confident using the following technologies.</p>
         <div className="flex items-center justify-between bg-white p-4 rounded-2xl m-2">
-          <img
-            className="w-16 h-16"
-            src="https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/html-5.svg"
-          />
-          <img
-            className="w-16 h-16"
-            src="https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/css-3.svg"
-          />
-          <img
-            className="w-16 h-16"
-            src="https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/javascript.svg"
-          />
-          <img
-            className="w-16 h-16"
-            src="https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/bootstrap.svg"
-          />
-          <img
-            className="w-16 h-16"
-            src="https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/react.svg"
-          />
-          <img
-            className="w-16 h-16"
-            src="https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/vue.svg"
-          />
-          <img
-            className="w-16 h-16"
-            src="https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/python.svg"
-          />
-          <img
-            className="w-16 h-16"
-            src="https://raw.githubusercontent.com/tomchen/stack-icons/634d5c036a2a7ca0115c94ab2ce86c7e79e01e13/logos/sqlite.svg"
-          />
+          {image.map((item, index) => {
+            return (
+              <img
+                key={index}
+                className="w-16 h-16 hover:cursor-pointer hover:scale-110 transition-all duration-200 ease-in-out"
+                src={item.img}
+                // onMouseOver={(e) => handleClick(e, item)}
+                onClick={(e) => handleClick(e, item)}
+                // onMouseLeave={()=>handleClose()}
+              />
+            );
+          })}
         </div>
         <div className="flex items-center justify-between bg-white p-4 rounded-2xl m-2">
           <img
@@ -214,6 +283,28 @@ const Aboutme = () => {
           tools.
         </p>
       </div>
+
+      <Popover
+        id={id}
+        open={open}
+        anchorEl={anchorEl}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: "top",
+          horizontal: "right",
+        }}
+        transformOrigin={{
+          vertical: "top",
+          horizontal: "left",
+        }}
+      >
+        {selected && (
+          <div className="p-4 max-w-sm">
+            <h2 className="text-lg font-semibold mb-2">{selected.title}</h2>
+            <p className="text-base">{selected.description}</p>
+          </div>
+        )}
+      </Popover>
     </div>
   );
 };
