@@ -36,7 +36,7 @@ const Search = () => {
   const onChange = (e) => {
     setValue(e.target.value);
   };
-  console.log(blocks);
+
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
