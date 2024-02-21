@@ -2,7 +2,7 @@ import React from 'react'
 
 const Edustats = () => {
   return (
-    <div>edustats</div>
+    <div>Updating Soon</div>
   )
 }
 
