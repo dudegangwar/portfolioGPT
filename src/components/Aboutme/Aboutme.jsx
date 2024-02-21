@@ -1,8 +1,8 @@
 import React from "react";
 import AnujPhoto from "../../assets/anuj.jpg";
 import Popover from "@mui/material/Popover";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
+// import Typography from "@mui/material/Typography";
+// import Button from "@mui/material/Button";
 const Aboutme = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [selected, setSelected] = React.useState(null);
@@ -113,7 +113,7 @@ const Aboutme = () => {
         <p>
           I am Anuj Kumar, a dedicated and passionate Data Science enthusiast
           with a keen interest in leveraging technology to solve real-world
-          problems. Currently pursuing a Bachelor's degree in Data Science and
+          problems. Currently pursuing a Bachelors degree in Data Science and
           Applications from the prestigious Indian Institute of Technology,
           Madras, I have a solid foundation in computer science, complemented by
           practical experience and a strong academic background.
@@ -129,7 +129,7 @@ const Aboutme = () => {
             <th>CGPA/Percentage</th>
           </tr>
           <tr>
-            <td>Bachelor's in Data Science and Applications</td>
+            <td>Bachelors in Data Science and Applications</td>
             <td>Indian Institute of Technology, Madras</td>
             <td>Jan 2021 - Present</td>
             <td>7 (CGPA)</td>
@@ -225,60 +225,60 @@ const Aboutme = () => {
       </div>
       <div className="mt-4">
         <h1 className="underline underline-offset-4 text-lg">Projects</h1>
-        <div class="project-container">
-          <div class="project">
+        <div className="project-container">
+          <div className="project">
             <h2>E-commerce Shopper’s Behaviour Understanding</h2>
             <p>
               Developed a predictive model to determine purchase behavior based
               on user session data.
             </p>
             <p>Accuracy achieved: 62%</p>
-            <a href="#" class="project-link">
+            <a href="https://www.kaggle.com/competitions/e-commerce-shoppers-behaviour-understanding/overview" className="project-link">
               View Project
             </a>
           </div>
 
-          <div class="project">
+          <div className="project">
             <h2>Chatbot to give answers from PDFs</h2>
             <p>Created a chatbot to extract answers from uploaded PDF files.</p>
-            <a href="#" class="project-link">
+            <a href="https://github.com/dudegangwar/ChatWithPDF" className="project-link">
               View Project
             </a>
           </div>
 
-          <div class="project">
+          <div className="project">
             <h2>Tasker App</h2>
             <p>
               Designed a task management app for efficient organization and
               productivity.
             </p>
-            <a href="#" class="project-link">
+            <a href="https://github.com/dudegangwar/tasker" className="project-link">
               View Project
             </a>
           </div>
 
-          <div class="project">
+          <div className="project">
             <h2>Business Analysis of Smartphone Shop</h2>
             <p>
               Utilized data analysis and visualization to optimize pricing
               strategies and identify growth opportunities.
             </p>
-            <a href="#" class="project-link">
+            <a href="https://www.linkedin.com/posts/dudegangwar_bdm-ppt-activity-7062113769811849216--oM1?utm_source=share&utm_medium=member_desktop" className="project-link">
               View Project
             </a>
           </div>
         </div>
         <p>
           I have a proven track record of successfully delivering impactful
-          projects. One notable project is the "E-commerce Shopper’s Behaviour
-          Understanding," where I developed a predictive model to analyze user
+          projects. One notable project is the E-commerce Shoppers Behaviour
+          Understanding, where I developed a predictive model to analyze user
           session data and predict purchase behavior with an accuracy of 62%.
-          Another innovative project is the creation of a "Chatbot to give
-          answers from PDFs," showcasing my expertise in Natural Language
+          Another innovative project is the creation of a Chatbot to give
+          answers from PDFs, showcasing my expertise in Natural Language
           Processing. Additionally, I have contributed to the development of the
-          "Tasker App," a task management application designed to enhance
+          Tasker App, a task management application designed to enhance
           productivity and workflow efficiency. Moreover, my experience in
-          "Business Analysis of Smartphone Shop" demonstrates my ability to
+          Business Analysis of Smartphone Shop demonstrates my ability to
           solve real-world problems using data-driven insights and analytics
           tools.
         </p>
