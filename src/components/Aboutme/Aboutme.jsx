@@ -1,5 +1,7 @@
 import React from "react";
 import AnujPhoto from "../../assets/anuj.jpg";
+import AnujPhoto1 from "../../assets/img1.png";
+import AnujPhoto2 from "../../assets/img2.png";
 import Popover from "@mui/material/Popover";
 // import Typography from "@mui/material/Typography";
 // import Button from "@mui/material/Button";
@@ -95,14 +97,14 @@ const Aboutme = () => {
           <div className="overflow-hidden w-full">
             <img
               className="hover:scale-110 transition-all duration-200 ease-in-out"
-              src={AnujPhoto}
+              src={AnujPhoto1}
               alt="Image 2"
             />
           </div>
           <div className="overflow-hidden w-full">
             <img
               className="hover:scale-110 transition-all duration-200 ease-in-out"
-              src={AnujPhoto}
+              src={AnujPhoto2}
               alt="Image 3"
             />
           </div>
@@ -225,9 +227,9 @@ const Aboutme = () => {
       </div>
       <div className="mt-4">
         <h1 className="underline underline-offset-4 text-lg">Projects</h1>
-        <div className="project-container">
-          <div className="project">
-            <h2>E-commerce Shopper’s Behaviour Understanding</h2>
+        <div className="project-container bg-slate-300">
+          <div className="project border bg-slate-300">
+            <h2>E-commerce Shopper's Behaviour Understanding</h2>
             <p>
               Developed a predictive model to determine purchase behavior based
               on user session data.
